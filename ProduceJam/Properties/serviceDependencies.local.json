@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "connectionInfo": "App registration: JamProduce, Tenant: The University of Technology,Jamaica (students.utech.edu.jm - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    },
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:ProduceJamContext"
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus2/connectors/ConnectionStringsjamproducedb1_045BD70DE7",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/jamproducesqlserver/databases/jamproducedb",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:jamproducedb1",
+      "dynamicId": null
+    }
+  }
+}
