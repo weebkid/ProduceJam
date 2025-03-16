@@ -15,6 +15,14 @@
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:jamproducedb1",
       "dynamicId": null
+    },
+    "appConfig1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus2/connectors/AppConfig_12D81EEFC9",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.AppConfiguration/configurationStores/JamProduceConfig",
+      "type": "appConfig.azure",
+      "connectionId": "AppConfig",
+      "dynamicId": null
     }
   }
 }
